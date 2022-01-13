@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="header">
+        <div id="dropdown">
+            <label for="cities">Cities: </label>
+            <select name="cities" id="cities">
+                <option value="Berlin">Berlin</option>
+                <option value="Budapest">Budapest</option>
+                <option value="London">London</option>
+                <option value="Paris">Paris</option>
+                <option value="Prague">Prague</option>
+            </select>
+            <button onclick="loadData()" class="btn">Select this city</button>
+        </div>
+        
+    </div>
+    <div hidden class="loading" id="loading">
+        <div class="loading-text">
+          <span class="loading-text-words">L</span>
+          <span class="loading-text-words">O</span>
+          <span class="loading-text-words">A</span>
+          <span class="loading-text-words">D</span>
+          <span class="loading-text-words">I</span>
+          <span class="loading-text-words">N</span>
+          <span class="loading-text-words">G</span>
+        </div>
+      </div>
+    <div id="draggable" class="no-select">
+        <div id="main">
+            <div id="gridCity" class="a">
+                <p id="city"></p>
+                <p id="country"></p>
+            </div>
+            <div id="skyCondition" class="b">
+                <img id="skyImg">
+                <p id="skyCond"></p>
+            </div>
+            <div id="datas1" class="c">
+                <p id="tempature"></p>
+                <p id="feelslike"></p>
+            </div>
+            <div id="datas2" class="d">
+                <p id="humidity"></p>
+                <p id="wind"></p>
+                <p id="cloud"></p>
+                <p id="pressure"></p>
+            </div>
+        </div>
+    </div>  
+    
+    <script src="script.js"></script>
+</body>
+</html>
